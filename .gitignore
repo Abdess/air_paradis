@@ -156,3 +156,5 @@ envs/
 data/glove/
 
 data/raw/
+
+.idea/

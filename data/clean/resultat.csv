@@ -1,0 +1,16 @@
+Modèle,Faux positifs,Score ROC (%),Accuracy (%),Perte (%),Temps d'entrainement (s)
+SimpleRNN + GloVe,21,58.23,56.88,76.48,12.3
+SimpleRNN + GloVe + Lemma,21,49.66,50.63,76.68,7.8
+SimpleRNN + GloVe + Stem,38,48.54,49.38,76.11,8.2
+SimpleRNN + W2V,63,52.14,50.63,76.60,8.9
+SimpleRNN + W2V + Lemma,38,56.44,54.06,74.69,6.6
+SimpleRNN + W2V + stem,94,51.08,48.75,74.57,6.2
+LSTM + GloVe,57,78.65,69.69,59.10,15.6
+LSTM + GloVe + Lemma,42,65.95,62.19,67.37,14.3
+LSTM + GloVe + Stem,29,65.56,60.62,71.63,13.9
+LSTM + W2V,46,52.40,52.50,69.19,14.2
+LSTM + W2V + Lemma,53,55.15,53.12,68.60,12.3
+LSTM + W2V + Stem,57,49.68,50.00,70.36,10.9
+Bidirectional LSTM,76,75.42,67.81,65.94,13.2
+Bert,110,72.37,65.62,62.63,26.1
+Bert + LSTM,94,79.12,70.63,55.68,28.9
