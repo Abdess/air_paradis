@@ -108,7 +108,7 @@ def word2vec(X,
 def plot_confusion_matrix(model, x_test, y_test, model_title='Modèle'):
     y_pred = (model.predict(x_test).ravel() > 0.5) + 0
     classes = ['negative', 'positive']
-    model_title = 'Confusion matrix - ' + model_title
+    model_title = 'Matrice de confusion - ' + model_title
     cm = confusion_matrix(y_test, y_pred)
     cr = classification_report(y_test, y_pred)
 
@@ -128,7 +128,7 @@ def plot_confusion_matrix(model, x_test, y_test, model_title='Modèle'):
                  color="white" if cm[i, j] > thresh else "black")
 
     plt.tight_layout()
-    plt.ylabel('True label')
-    plt.xlabel('Predicted label')
+    plt.ylabel('Réelle')
+    plt.xlabel('Estimée')
     plt.show()
     print(cr)
